@@ -1,2 +1,3 @@
 #!/bin/bash
-import $PYFILE
+chmod u+x $PYFILE
+python $PYFILE
