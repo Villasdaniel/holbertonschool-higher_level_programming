@@ -1,4 +1,1 @@
-# holbertonschool-higher_level_programming
-# holbertonschool-higher_level_programming
-# holbertonschool-higher_level_programming
-# holbertonschool-higher_level_programming
+This repository contains the high level project tasks
