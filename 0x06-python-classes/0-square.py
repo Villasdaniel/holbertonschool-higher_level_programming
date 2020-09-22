@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """class square"""
+
+
 class Square:
 
         """
-        My first class
+        class square
         """
         pass
-
