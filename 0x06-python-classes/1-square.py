@@ -2,8 +2,9 @@
 """first class"""
 
 
-class Square: pass
-"""(python3 -c 'print(__import__("my_module").MyClass.__doc__)')"""
+class Square:
+        """(python3 -c 'print(__import__("my_module").MyClass.__doc__)')
+        """
         def __init__(self, size):
                 """variable initializing"""
                 self.size = size
