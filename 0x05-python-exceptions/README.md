@@ -1,0 +1,1 @@
+This directory contains the 0x05-python-exceptions project files
