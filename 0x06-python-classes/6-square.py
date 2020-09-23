@@ -47,6 +47,7 @@ class Square:
         """method to print # in all the square position"""
         if self.__size == 0:
             print()
+            return
         if self.__position[1] >= 0:
             print("\n" * self.__position[1], end="")
             for i in range(self.__size):
