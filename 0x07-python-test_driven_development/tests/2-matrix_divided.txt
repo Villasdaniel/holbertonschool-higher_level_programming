@@ -74,7 +74,7 @@ Div by 0:
     >>> matrix_divided(matrix, 0)
     Traceback (most recent call last):
     ...
-    ZeroDivisionError: division by Zero
+    ZeroDivisionError: division by zero
 
 Div by inf
     
