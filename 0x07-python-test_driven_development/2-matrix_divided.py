@@ -19,11 +19,11 @@ def matrix_divided(matrix, div):
                 a = []
                 if (len(matrix[0]) != len(matrix[i])):
                         raise TypeError("Each row of the matrix\
-must have the same size")
+ must have the same size")
                 for j in range(len(matrix[i])):
                         if type(j) not in [int, float]:
                                 raise TypeError("matrix must be a matrix\
-(list of lists) of integers/floats")
+ (list of lists) of integers/floats")
                         a.append(round(((matrix[i][j]) / div), 2))
                 b.append(a)
         return b
