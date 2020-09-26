@@ -18,7 +18,7 @@ Checking docstring for module:
 
 Import module:
     
-    >>> print_square = __import__('5-text_indentation').print_square
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
 
 Check docstring for function:
     
