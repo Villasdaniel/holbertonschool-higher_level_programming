@@ -31,7 +31,7 @@ No arguments:
     ...
     TypeError: say_my_name() missing 1 required positional argument: 'first_name'
 
-Correct working (two arguments):
+Correct working:
 
     >>> say_my_name("John", "Smith")
     My name is John Smith
@@ -49,3 +49,10 @@ Checking is a first element is not a string:
     Traceback (most recent call last):
     ...
     TypeError: first_name must be a string
+
+Checking if a last element is not a string:
+
+    >>> say_my_name("Smith", 1)
+    Traceback (most recent call last):
+    ...
+    TypeError: last_name must be a string
