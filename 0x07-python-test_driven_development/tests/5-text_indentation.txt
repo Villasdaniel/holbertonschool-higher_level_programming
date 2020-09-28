@@ -25,30 +25,36 @@ Check docstring for function:
     >>> len(text_indentation.__doc__) > 0
     True
 
-Checking for passing None:
+None:
     
     >>> text_indentation(None)
     Traceback (most recent call last):
     ...
     TypeError: text must be a string
 
-Checking for passing an integer type:
+Integer:
     
-    >>> text_indentation(8)
+    >>> text_indentation(7)
     Traceback (most recent call last):
     ...
     TypeError: text must be a string
 
-Checking for no args:
+More than one argument:
+    
+    >>> text_indentation("Hello", "World")
+    Traceback (most recent call last):
+    ...
+    TypeError: text_indentation() takes 1 positional argument but 2 were given
+
+Zero arguments:
     
     >>> text_indentation()
     Traceback (most recent call last):
     ...
     TypeError: text_indentation() missing 1 required positional argument: 'text'
 
-Checking function with many arguments:
-    
-    >>> text_indentation("Hi", "Horacio")
-    Traceback (most recent call last):
-    ...
-    TypeError: text_indentation() takes 1 positional argument but 2 were given
+String with blank line:
+
+>>> text_indentation("hello_world\n\n")
+hello_world
+
