@@ -55,7 +55,7 @@ Zero arguments:
 
 String with blank line:
 
-    >>> text_indentation("hello_world\n\n")
-    hello_world
+    >>> text_indentation("hello_world.")
+    hello_world.
     <BLANKLINE>
 
