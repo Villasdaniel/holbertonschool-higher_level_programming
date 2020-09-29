@@ -9,7 +9,7 @@ class Rectangle:
         def __init__(self, width=0, height=0):
                 """initialize instances"""
                 self.__widht = width
-                self.height = height
+                self.__height = height
 
         @property
         def width(self):
