@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-        """[summary]
-        """
+"""[summary]
+"""
+
+
 class LockedClass:
         """[summary]
         """
