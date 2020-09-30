@@ -1,3 +1,7 @@
 #!/usr/bin/python3
-class LockedClass():
+        """[summary]
+        """
+class LockedClass:
+        """[summary]
+        """
         __slots__ = ['first_name']
