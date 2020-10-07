@@ -2,6 +2,7 @@
 """class MyList"""
 
 class MyList(list):
+"""[summary]"""
         def __init__(self):
                 """[summary]"""
                 super().__init__
