@@ -4,5 +4,7 @@
 
 def number_of_lines(filename=""):
         """returns the number of lines of a text file"""
-        with open('my_file_0.txt', encoding="utf-8") as f:
+
+
+        with open(filename, 'r') as f:
                 return(sum(1 for line in f))
