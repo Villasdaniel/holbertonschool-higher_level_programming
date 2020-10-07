@@ -3,13 +3,13 @@
 
 class MyList(list):
 """[summary]"""
-        def __init__(self):
-                """[summary]"""
-                super().__init__
+	def __init__(self):
+		"""[summary]"""
+		super().__init__
 
-        class MyList(list):
-                """ prints the list, but sorted (ascending sort)"""
-                def print_sorted(self):
-                        """[summary]
-                        """
-                        print(sorted(self))
+	class MyList(list):
+		""" prints the list, but sorted (ascending sort)"""
+		def print_sorted(self):
+			"""[summary]
+			"""
+			print(sorted(self))
