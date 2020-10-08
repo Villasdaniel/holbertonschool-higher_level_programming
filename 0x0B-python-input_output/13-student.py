@@ -22,5 +22,6 @@ class Student:
             return self.__dict__
 
     def reload_from_json(self, json):
+        """reload"""
         if json:
-            self.__dic__ = json
+            self.__dict__ = json
