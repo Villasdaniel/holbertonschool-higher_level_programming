@@ -3,6 +3,7 @@
 
 
 from models.base import Base
+import json
 
 
 class Rectangle(Base):
@@ -100,3 +101,10 @@ class Rectangle(Base):
                 self.y = args[4]
             except IndexError:
                 pass
+
+    def to_dictionary(self):
+        """returns the dictionary representation of a Rectangle"""
+        a = {}
+        for key in ["id", "width", "height", "x", "y"]:
+            a[key] = getattr(self, key)
+        return a
