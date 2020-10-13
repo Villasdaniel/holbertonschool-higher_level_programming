@@ -3,6 +3,7 @@
 
 
 import json
+import csv
 
 
 class Base():
@@ -62,3 +63,30 @@ class Base():
             return inslist
         except:
             return inslist
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        filename = cls.__name__ + ".csv"
+        with open(filename, "w") as f:
+            writecsv = csv.writer(f, delimiter=",")
+            if cls.__name__ == "Rectangle":
+                keys = ["id", "width", "height", "x", "y"]
+            if cls.__name__ == "Square":
+                keys = ["id", "size", "x", "y"]
+            for obj in list_objs:
+                writecsv.writerow(getattr(obj, key) for key in keys)
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """that serializes and deserializes in CSV"""
+        filename = cls.__name__ + ".csv"
+        with open(filename, "r") as csv_f:
+            csv_reader = csv.DictReader(csv_f)
+            list_ = {}
+            list_2 = []
+            for row in csv_reader:
+                for l_key, l_value in dict(row).items():
+                    list_[l_key] = l_value
+                list_2.append(cls.create(**list_))
+            return list_2
+
