@@ -1,13 +1,11 @@
-y_list
+base_geometry
 ===========================
 
 Function
-========.
-function that prints the list, but sorted (ascending sort)
+========
 
 Operations
 ==========
-prints the list, but sorted (ascending sort)
 
 Uses:
 Checking docstring for module:
