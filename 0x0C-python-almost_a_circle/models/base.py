@@ -39,9 +39,9 @@ class Base():
     @staticmethod
     def from_json_string(json_string):
         """returns the list of the JSON string representation json_string"""
-        if json_string is not None or len(json_string) != 0:
-            return json.loads(json_string)
-        return []
+        if json_string is None or len(json_string) == 0:
+            return []
+        return json.loads(json_string)
 
     @classmethod
     def create(cls, **dictionary):
