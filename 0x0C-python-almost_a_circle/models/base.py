@@ -89,4 +89,3 @@ class Base():
                     list_[l_key] = l_value
                 list_2.append(cls.create(**list_))
             return list_2
-
