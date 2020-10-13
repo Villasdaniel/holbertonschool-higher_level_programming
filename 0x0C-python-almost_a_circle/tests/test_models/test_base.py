@@ -2,13 +2,13 @@
 """unittest base"""
 
 import unittest
-from models.base import Base
+from models.base import Base, __doc__ as mrdoc
 import inspect
 import pep8
 
 
-class base_test(unittest, testcase):
-"""unittest base"""
+class test_base(unittest.TestCase):
+    """unittest base"""
     def test_doctstring(self):
         """Test documentation"""
         print(mrdoc)
