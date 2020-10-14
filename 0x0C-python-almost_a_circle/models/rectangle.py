@@ -18,6 +18,7 @@ class Rectangle(Base):
 
     @staticmethod
     def validation(name, value):
+        """validation"""
         if type(value) is not int:
             raise TypeError("{:s} must be an integer".format(name))
         if name in ["width", "height"] and value <= 0:
