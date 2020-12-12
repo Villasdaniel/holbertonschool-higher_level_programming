@@ -20,4 +20,3 @@ def get_cities_states(username, password, dbname):
 
 if __name__ == '__main__':
     get_cities_states(argv[1], argv[2], argv[3])
-    
