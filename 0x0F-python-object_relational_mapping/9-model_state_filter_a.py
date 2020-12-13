@@ -10,7 +10,7 @@ from sqlalchemy.orm import Session
 if __name__ == "__main__":
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
                             argv[1], argv[2], argv[3]))
-    session = Session(engine)
+    session = Session(bind=engine)
     for state in session.query(State).filter
     (State.name.like("%a%")).all():
         print("{}: {}".format(state.id, state.name))
