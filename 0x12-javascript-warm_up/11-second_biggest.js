@@ -1,7 +1,7 @@
 #!/usr/bin/node
 // searches the second biggest integer in the list of arguments
 
-const MyVar = []; let i;
+let MyVar = []; let i;
 for (i = 2; i < process.argv.length; i++) {
     MyVar.push(parseInt(process.argv[i]));
 }
