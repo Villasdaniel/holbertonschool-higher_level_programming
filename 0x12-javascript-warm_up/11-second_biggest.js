@@ -5,9 +5,8 @@ const MyVar = []; let i;
 for (i = 2; i < process.argv.length; i++) {
   MyVar.push(parseInt(process.argv[i]));
 }
-if (MyVar.length <= 1) {
-  console.log(0);
-} else {
+if (MyVar.length > 1) {
   MyVar.sort();
   console.log(MyVar[MyVar.length - 2]);
 }
+console.log(0);
