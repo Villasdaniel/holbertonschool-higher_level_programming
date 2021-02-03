@@ -1,12 +1,12 @@
 #!/usr/bin/node
 // searches the second biggest integer in the list of arguments
 
-const MyVar = []; let i;
-for (i = 2; i < process.argv.length; i++) {
-  MyVar.push(parseInt(process.argv[i]));
+let zero = 0;
+const numList = process.argv.slice(2);
+if (numList.length > 1) {
+  numList.sort(function (a, b) {
+    return a - b;
+  });
+  zero = numList[numList.length - 2];
 }
-if (MyVar.length > 1) {
-  MyVar.sort();
-  console.log(MyVar[MyVar.length - 2]);
-}
-console.log(0);
+console.log(zero);
