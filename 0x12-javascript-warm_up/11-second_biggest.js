@@ -2,7 +2,7 @@
 // searches the second biggest integer in the list of arguments
 
 const MyVar = []; let i;
-if (process.argv.length <= 3) {
+if (process.argv.length === 3 || process.argv.length === 2) {
   console.log(0);
 } else {
   for (i = 2; i < process.argv.length; i++) {
