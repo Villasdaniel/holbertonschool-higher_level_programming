@@ -1,4 +1,5 @@
 #!/usr/bin/node
+//  reads and prints the content of a file.
 
 const myFile = require('fs');
 

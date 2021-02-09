@@ -1,4 +1,5 @@
 #!/usr/bin/node
+// gets the contents of a webpage and stores it in a file.
 
 const request = require('request');
 const myFile = require('fs');
