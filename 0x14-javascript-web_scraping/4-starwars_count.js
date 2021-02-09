@@ -2,19 +2,20 @@
 
 const request = require('request');
 const args = process.argv;
+let Acum = 0;
 
-request(args[2], function (error, response, body) {
-  if (error) {
-    console.log(error);
+request(args[2], function (err, resp, body) {
+  if (err) {
+    console.log(err);
   } else {
     const films = JSON.parse(body).results;
-    for (const i in films) {
-      for (const x in films[i].characters) {
-        if (films[i].characters[x] === 'https://swapi-api.hbtn.io/api/people/18/') {
-          count = count + 1;
+    for (const List in films) {
+      for (const Charac in films[List].characters) {
+        if (films[List].characters[Charac].includes('/18/')) {
+          Acum++;
         }
       }
     }
   }
-  return console.log(count);
+  return console.log(Acum);
 });
